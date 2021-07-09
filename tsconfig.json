@@ -1,0 +1,10 @@
+{
+  "include": [
+    "main"
+  ],
+  "compilerOptions": {
+    "outFile": "dist/main/main.js",
+  }
+}
+
+  

@@ -1,0 +1,43 @@
+@use "../variables" as *;
+@use "./titlebar.scss" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-user-drag: none;
+}
+*:focus {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+body,
+html {
+  height: 100%;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  color: $white;
+  font-family: $font_family;
+  text-rendering: optimizeLegibility;
+  font-size: $caption;
+  &::-webkit-scrollbar {
+    width: 3;
+  }
+  input,
+  textarea,
+  button,
+  select,
+  p,
+  a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    color: inherit;
+  }
+}
+.App {
+  border-radius: 15px;
+}
