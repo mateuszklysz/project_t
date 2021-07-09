@@ -19,6 +19,8 @@ npm i
 
 ## Usage
 
+#### Development
+
 ###### Run both commands in separate terminals
 
 ```bash
@@ -27,6 +29,16 @@ npm start
 
 # generete and launch Electron app
 npm run electron
+```
+
+#### Production
+
+```bash
+# build app files
+npm run build
+
+# generete and build Electron executable file
+npm run dist
 ```
 
 ## Contributing
