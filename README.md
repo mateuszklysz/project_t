@@ -4,7 +4,7 @@
 
 # Project T
 
-[Electron](https://www.electronjs.org/) app for listening to music with friends.\
+[Electron](https://www.electronjs.org/) app for listening music with friends.\
 Smooth and convenient user interface and lots of features.\
 Design based on **Fluent UI**.
 
