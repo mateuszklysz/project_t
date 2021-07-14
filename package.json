@@ -18,9 +18,6 @@
   ],
   "author": "Mateusz Kłysz <mateuszklysz@outlook.com>",
   "license": "GNU GPLv3",
-  "dependencies": {
-    "electron-acrylic-window": "^0.5.5"
-  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-alpha.3",
     "concurrently": "^6.2.0",

@@ -1,5 +1,12 @@
+const os = window.require("os");
 const { ipcRenderer } = window.require("electron");
 const TitleBarButtons = document.querySelectorAll(".button");
+
+// Remove titlebar while using Linux
+if (os.platform() === "linux") {
+  const titlebar = <HTMLDivElement>document.querySelector(".titlebar");
+  titlebar.style.display = "none";
+}
 
 const changeSVG = (target: EventTarget) => {
   ipcRenderer.on("isMaximized", () =>

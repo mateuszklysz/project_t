@@ -1,19 +1,25 @@
-const { app, ipcMain } = require("electron");
-const { BrowserWindow } = require("electron-acrylic-window");
+const os = require("os");
+const { app, ipcMain, BrowserWindow } = require("electron");
+// const { BrowserWindow } = require("electron-acrylic-window");
 const path = require("path");
+
+let frame: boolean;
 let win;
+
+os.platform() === "linux" ? (frame = true) : (frame = false);
 
 // Create Electron App
 function createWindow() {
   win = new BrowserWindow({
     width: 1280,
     height: 720,
-    frame: false,
+    frame,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
     },
   });
+  win.setMenu(null);
 
   win.loadURL(`file://${path.join(__dirname, "../renderer/index.html")}`);
 
